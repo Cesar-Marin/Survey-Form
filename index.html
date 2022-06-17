@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head>
+  <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class='header'>
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description">
+         Gracias por tomarte el tiempo en contestar esta encuensta
+        </p>
+      </header>
+      <form id="survey-form">
+<section>
+      
+      
+<label id="name-label">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required />
+        
+       
+          <label id="email-label">Email</label>
+          <input type="email" name="email" id="email"  placeholder="Escribe tu Email" required= />
+        
+        
+          <label id="number-label">Cuantos anios tienes? <span>(opcional)</span></label>
+          <input type="number" name="age" id="number" min="18" max="99"  placeholder="Edad">
+  
+
+  </section>
+  <section>
+          <p>Cual es tu ocupacion?</p>
+          <select id="dropdown" name="role" required="">
+            <option disabled="" selected="" value="">Selecciona alguno</option>
+            <option value="student">Estudiante</option>
+            <option value="job">Trabajo tiempo completo</option>
+            <option value="learner">Aprendiz de tiempo completo</option>
+            <option value="preferNo">Prefiero el anonimato</option>
+            <option value="other">Otros roles</option>
+          </select>
+
+          <p>Recomendarias freeCodeCamp a  un amigo?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio inline" checked="">Definitivamente</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio inline">Quiza...</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio inline">No estoy seguro</label>
+        
+
+        
+          <p>Cual caracteristica de freeCodeCamp te gusta mas?</p>
+          <select id="most-like" name="mostLike"  required="">
+            <option disabled="" selected="" value="">Selecciona alguno</option>
+            <option value="challenges">Sus retos</option>
+            <option value="projects">Sus proyectos</option>
+            <option value="community">su comunidad</option>
+            <option value="openSource">Libre acceso</option>
+          </select>
+     </section>
+
+       
+          <p>
+            Que te gustaria que implementaramos?
+            <span>(Selecciona todas las que apliquen)</span>
+          </p>
+          <div>
+<section class="form-group">
+          <div class='row'>
+             <div class='column'>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Proyectos Front-end </label></div>
+          <div class='column'><label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Proyectos Back-end</label></div>
+          <div class='column'><label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Vizualizacion de datos</label></div></div>
+          <div class='row'>
+             <div class='column'><label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Mas retos</label></div>
+          <div class='column'><label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Comunidad de libre acceso</label></div>
+         <div class='column'> <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Salas de ayuda Gitter</label></div></div>
+          <div class='row'>
+             <div class='column'><label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Video guias</label></div>
+         <div class='column'> <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">Encuentros en ciudades</label></div>
+          <div class='column'><label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki</label></div></div>
+         <div class='row'>
+             <div class='column'> <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Foros</label></div>
+         <div class='column'> <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Mas cursos !</label></div>
+        
+         <div class='column'> <label><input name="prefer" value="others" type="checkbox" class="input-checkbox">Otros</label></div>
+        </div>
+</section>
+      
+          <p>Agrega aqui tus comentarios extra! </p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+       
+
+     
+         <input id='submit' type="submit" value="Submit" />
+        
+      </form>
+ <footer>  </footer>
